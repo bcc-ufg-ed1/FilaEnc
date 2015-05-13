@@ -58,7 +58,7 @@ int obterInicio(FilaEnc* fila, int* item) {
         return ESTRUTURA_NAO_INICIALIZADA;
     if (estahVazia(fila))
         return ESTRUTURA_VAZIA;
-    *item = fila->inicio;
+    *item = fila->inicio->item;
     return OK;
 }
 
