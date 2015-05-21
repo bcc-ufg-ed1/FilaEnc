@@ -18,7 +18,7 @@ void imprimirFila(FilaEnc* f) {
 }
 
 int main() {
-    FilaEnc* minhaFila = criarFila();
+    FilaEnc* minhaFila = criarFilaItem(0);
     inserir(1, minhaFila);
     inserir(2, minhaFila);
     inserir(3, minhaFila);

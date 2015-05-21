@@ -19,6 +19,7 @@ typedef struct {
 } FilaEnc;
 
 FilaEnc* criarFila();
+FilaEnc* criarFilaItem(int item);
 int liberarFila(FilaEnc* fila);
 int estahVazia(FilaEnc* fila);
 int inserir(int item, FilaEnc* fila);

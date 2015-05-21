@@ -71,6 +71,11 @@ int liberarFila(FilaEnc *fila) {
 	fila = NULL;
 	return OK;
 }
-
+FilaEnc* criarFilaItem(int item){
+    /**Não se faz necessário vareficações**/
+    FilaEnc* novaFila = criarFila();
+    inserir(item,novaFila);
+    return novaFila;
+}
 
 
