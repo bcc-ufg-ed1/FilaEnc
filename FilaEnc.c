@@ -71,6 +71,16 @@ int liberarFila(FilaEnc *fila) {
 	fila = NULL;
 	return OK;
 }
-
+FilaEnc* clonarFila(FilaEnc* fila){
+    if (fila == NULL)
+        return ESTRUTURA_NAO_INICIALIZADA;
+    FilaEnc* novaFila = criarFila();
+    No* aux = fila->inicio;
+    while(aux!=NULL){
+        inserir(aux->item,novaFila);
+        aux=aux->prox;
+    }
+    return novaFila;
+}
 
 
