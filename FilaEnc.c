@@ -80,6 +80,7 @@ FilaEnc* clonarFila(FilaEnc* fila){
         inserir(aux->item,novaFila);
         aux=aux->prox;
     }
+    free(aux);
     return novaFila;
 }
 

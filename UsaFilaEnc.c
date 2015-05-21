@@ -26,5 +26,6 @@ int main() {
     FilaEnc* novaFila = clonarFila(minhaFila);
     imprimirFila(novaFila);
     liberarFila(minhaFila);
+    liberarFila(novaFila);
     return EXIT_SUCCESS;
 }
