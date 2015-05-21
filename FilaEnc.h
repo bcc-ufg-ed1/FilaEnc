@@ -16,6 +16,7 @@ typedef struct {
 typedef struct {
   No* inicio;
   No* fim;
+  int tamanho;
 } FilaEnc;
 
 FilaEnc* criarFila();
@@ -24,5 +25,5 @@ int estahVazia(FilaEnc* fila);
 int inserir(int item, FilaEnc* fila);
 int remover(FilaEnc* fila, int* item);
 int obterInicio(FilaEnc* fila, int* item);
-
+int obterTamanho(FilaEnc* fila, int* item);
 #endif // FILA_ENC_H
