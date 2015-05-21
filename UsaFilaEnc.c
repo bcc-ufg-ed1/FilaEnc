@@ -22,6 +22,7 @@ int main() {
     inserir(1, minhaFila);
     inserir(2, minhaFila);
     inserir(3, minhaFila);
+    inicioToFim(minhaFila);
     imprimirFila(minhaFila);
     liberarFila(minhaFila);
     return EXIT_SUCCESS;

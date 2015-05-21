@@ -8,3 +8,14 @@
 	<stdlib.h>
 	"FilaEnc.h"
 
+1432247561 source:/home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/FilaEnc/FilaEnc.c
+	<stdlib.h>
+	"FilaEnc.h"
+
+1432247114 /home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/FilaEnc/FilaEnc.h
+
+1432247468 source:/home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/FilaEnc/UsaFilaEnc.c
+	<stdio.h>
+	<stdlib.h>
+	"FilaEnc.h"
+
