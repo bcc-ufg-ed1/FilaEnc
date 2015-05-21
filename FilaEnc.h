@@ -24,5 +24,5 @@ int estahVazia(FilaEnc* fila);
 int inserir(int item, FilaEnc* fila);
 int remover(FilaEnc* fila, int* item);
 int obterInicio(FilaEnc* fila, int* item);
-
+int inicioToFim(FilaEnc* fila);
 #endif // FILA_ENC_H

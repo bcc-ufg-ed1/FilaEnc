@@ -72,5 +72,11 @@ int liberarFila(FilaEnc *fila) {
 	return OK;
 }
 
-
-
+int inicioToFim(FilaEnc* fila){
+    if (fila == NULL)
+        return ESTRUTURA_NAO_INICIALIZADA;
+    int item;
+    if(remover(fila,&item)!=OK) return ESTRUTURA_VAZIA;
+    inserir(item,fila);
+    return OK;
+}
