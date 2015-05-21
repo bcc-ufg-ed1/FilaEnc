@@ -23,6 +23,9 @@ int main() {
     inserir(2, minhaFila);
     inserir(3, minhaFila);
     imprimirFila(minhaFila);
+    int tam;
+    obterTamanho(minhaFila,&tam);
+    printf("Tamanho: %d\n",tam);
     liberarFila(minhaFila);
     return EXIT_SUCCESS;
 }

@@ -7,6 +7,7 @@ FilaEnc* criarFila() {
         return NULL;
 	fila->inicio = NULL;
 	fila->fim = NULL;
+	fila->tamanho=0;
 	return fila;
 }
 
@@ -27,6 +28,7 @@ int inserir(int item, FilaEnc* fila) {
     else
         fila->fim->prox = novoNo;
     fila->fim = novoNo;
+    fila->tamanho++;
     return OK;
 }
 
@@ -50,6 +52,7 @@ int remover(FilaEnc* fila, int* item) {
     if (fila->inicio == NULL) fila->fim = NULL;
     free(aux);
     aux = NULL;
+    fila->tamanho--;
     return OK;
 }
 
@@ -71,6 +74,11 @@ int liberarFila(FilaEnc *fila) {
 	fila = NULL;
 	return OK;
 }
-
+int obterTamanho(FilaEnc* fila,int* item){
+    if (fila == NULL)
+        return ESTRUTURA_NAO_INICIALIZADA;
+    *item = fila->tamanho;
+    return OK;
+}
 
 
