@@ -22,7 +22,15 @@ int main() {
     inserir(1, minhaFila);
     inserir(2, minhaFila);
     inserir(3, minhaFila);
-    imprimirFila(minhaFila);
+
+    //imprimirFila(minhaFila);
+
+    FilaEnc* novaFila;
+    clonarFila(minhaFila,novaFila);
+
+    imprimirFila(novaFila);
+
     liberarFila(minhaFila);
+    liberarFila(novaFila);
     return EXIT_SUCCESS;
 }
