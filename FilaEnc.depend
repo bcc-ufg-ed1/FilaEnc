@@ -8,13 +8,13 @@
 	<stdlib.h>
 	"FilaEnc.h"
 
-1432245404 source:/home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/FilaEnc/FilaEnc.c
+1432427455 source:/home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/FilaEnc/FilaEnc.c
 	<stdlib.h>
 	"FilaEnc.h"
 
-1432242912 /home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/FilaEnc/FilaEnc.h
+1432427268 /home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/FilaEnc/FilaEnc.h
 
-1432243501 source:/home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/FilaEnc/UsaFilaEnc.c
+1432427511 source:/home/guilherme/Documentos/CDC-03/ED1/EstruturasEnc/FilaEnc/UsaFilaEnc.c
 	<stdio.h>
 	<stdlib.h>
 	"FilaEnc.h"
