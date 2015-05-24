@@ -25,7 +25,7 @@ int main() {
 
     //imprimirFila(minhaFila);
 
-    FilaEnc* novaFila = criarFila();
+    FilaEnc* novaFila;
     clonarFila(minhaFila,novaFila);
 
     imprimirFila(novaFila);
