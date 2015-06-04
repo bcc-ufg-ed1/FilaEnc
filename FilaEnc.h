@@ -7,6 +7,7 @@
 #define OK 0
 #define ESTRUTURA_NAO_INICIALIZADA -1
 #define ESTRUTURA_VAZIA -2
+#define PARAMETRO_INVALIDO -3
 
 typedef struct {
   int item;
@@ -21,7 +22,7 @@ typedef struct {
 FilaEnc* criarFila();
 int liberarFila(FilaEnc* fila);
 int estahVazia(FilaEnc* fila);
-int inserir(int item, FilaEnc* fila);
+int inserir(FilaEnc* fila, int item);
 int remover(FilaEnc* fila, int* item);
 int obterInicio(FilaEnc* fila, int* item);
 

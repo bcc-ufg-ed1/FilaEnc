@@ -12,16 +12,17 @@ FilaEnc* criarFila() {
 
 No* criarNo(int item, No* prox) {
 	No *no = malloc(sizeof(*no));
+	if (no == NULL)
+        return NULL;
 	no->item = item;
 	no->prox = prox;
 	return no;
 }
 
-int inserir(int item, FilaEnc* fila) {
-    if (fila == NULL)
-        return ESTRUTURA_NAO_INICIALIZADA;
-
+int inserir(FilaEnc* fila, int item) {
     No *novoNo = criarNo(item, NULL);
+    if (fila == NULL || novoNo == NULL)
+        return ESTRUTURA_NAO_INICIALIZADA;
     if (fila->fim == NULL)
         fila->inicio = novoNo;
     else
@@ -33,8 +34,8 @@ int inserir(int item, FilaEnc* fila) {
 int estahVazia(FilaEnc *fila) {
     if (fila == NULL)
         return ESTRUTURA_NAO_INICIALIZADA;
-
-    if (fila->fim == NULL) return TRUE;
+    if (fila->fim == NULL)
+        return TRUE;
     else return FALSE;
 }
 
@@ -47,7 +48,8 @@ int remover(FilaEnc* fila, int* item) {
     if (item != NULL)
         *item = aux->item;
     fila->inicio = aux->prox;
-    if (fila->inicio == NULL) fila->fim = NULL;
+    if (fila->inicio == NULL)
+        fila->fim = NULL;
     free(aux);
     aux = NULL;
     return OK;
@@ -58,6 +60,8 @@ int obterInicio(FilaEnc* fila, int* item) {
         return ESTRUTURA_NAO_INICIALIZADA;
     if (estahVazia(fila))
         return ESTRUTURA_VAZIA;
+    if (item == NULL)
+        return PARAMETRO_INVALIDO;
     *item = fila->inicio->item;
     return OK;
 }
@@ -71,6 +75,3 @@ int liberarFila(FilaEnc *fila) {
 	fila = NULL;
 	return OK;
 }
-
-
-

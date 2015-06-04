@@ -8,20 +8,20 @@ void imprimirFila(FilaEnc* f) {
     while(!estahVazia(f)) {
         remover(f, &item);
         printf("%d\n", item);
-        inserir(item, fAux);
+        inserir(fAux, item);
     }
     while(!estahVazia(fAux)) {
         remover(fAux, &item);
-        inserir(item, f);
+        inserir(f, item);
     }
     liberarFila(fAux);
 }
 
 int main() {
     FilaEnc* minhaFila = criarFila();
-    inserir(1, minhaFila);
-    inserir(2, minhaFila);
-    inserir(3, minhaFila);
+    inserir(minhaFila, 1);
+    inserir(minhaFila, 2);
+    inserir(minhaFila, 3);
     imprimirFila(minhaFila);
     liberarFila(minhaFila);
     return EXIT_SUCCESS;
